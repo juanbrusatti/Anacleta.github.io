@@ -1,0 +1,182 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffbf4;
+    color: #333;
+}
+
+header {
+    background-color: #00684e;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+}
+
+/* Estilos para el contenedor del logo */
+.logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Estilos para la imagen del logo */
+.logo {
+    width: 250px; /* Ajusta el ancho según tus necesidades */
+    height: 120px; /* Ajusta la altura según tus necesidades */
+    border-radius: 10%; /* Hace que la imagen sea redonda */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+categoria{
+    text-align: center; /* Centra el texto y el selector */
+}
+
+label {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none; /* Elimina la apariencia predeterminada del navegador */
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s, background-color 0.3s;
+
+}
+
+
+label:hover,
+label:focus {
+    border-color: #00684e;
+    background-color: #f9f9f9;
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #333; /* Cambia el color al pasar el ratón sobre los enlaces */
+}
+
+section {
+    margin: 40px;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.producto {
+    width: calc(25% - 20px); /* 25% del ancho menos el espacio entre productos */
+    margin: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #fff;
+    transition: box-shadow 0.3s;
+    text-align: center; /* Añadido para centrar el contenido */
+}
+
+.producto img {
+    max-width: 100%; /* Hace que la imagen se ajuste al 100% del ancho del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto original de la imagen */
+}
+
+.producto:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #00684e;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px; /* Tamaño de fuente reducido */
+}
+
+.producto button {
+    background-color: #00684e;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.producto button:hover {
+    background-color: #00684e;
+}
+
+/* Estilos para la imagen principal izquierda */
+.imagen-destacada.izquierda {
+    position: relative;
+    max-width: 610px; /* Ajusta el ancho máximo según tus preferencias */
+    margin: 20px 0 0 20px; /* Ajusta los márgenes */
+    border-radius: 15px; /* Añade esquinas redondeadas */
+    overflow: hidden;
+    float: left; /* Hace que el elemento flote a la izquierda */
+}
+
+.imagen-destacada.izquierda img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px; /* Añade esquinas redondeadas */
+}
+
+/* Estilos para la imagen derecha */
+.imagen-destacada.derecha {
+    position: relative;
+    max-width: 550px; /* Ajusta el ancho máximo según tus preferencias */
+    margin: 20px 0 0 20px; /* Ajusta los márgenes */
+    border-radius: 15px; /* Añade esquinas redondeadas */
+    overflow: hidden;
+    float: right; /* Hace que el elemento flote a la derecha */
+     vertical-align: top; /* Ajusta la alineación vertical */
+}
+
+.imagen-destacada.derecha img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px; /* Añade esquinas redondeadas */
+}
+
+/* Estilos para el texto descriptivo */
+.texto-descriptivo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+    border-radius: 0 0 15px 0; /* Esquina inferior izquierda redondeada */
+}
+
+
+
+/* Fuente de Google Fonts: Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}

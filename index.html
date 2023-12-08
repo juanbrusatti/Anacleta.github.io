@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tienda Sublimada</title>
+</head>
+<body>
+
+<header>
+    <h1>Anacleta</h1>
+    <div class="logo-container">
+        <img src="anacleta2.png" alt="Logo" class="logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="mostrarSeccion('home')">Inicio</a></li>
+            <li><a href="#" onclick="mostrarSeccion('ventas')">Productos</a></li>
+            <li><a href="#" onclick="mostrarSeccion('about')">Acerca de</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="seccion">
+    <div class="imagen-destacada izquierda">
+        <h2>Bienvenido a Anacleta</h2>
+        <img src="sub.jpg" alt="Imagen Principal">
+        <div class="texto-descriptivo">
+            <p>Texto descriptivo sobre la imagen.</p>
+        </div>
+    </div>
+    <div class="imagen-destacada derecha">
+        <img src="sub.jpg" alt="Otra Imagen">
+        <div class="texto-descriptivo">
+            <p>Texto descriptivo sobre la imagen.</p>
+        </div>
+    </div>
+    <p>‎ ‎ ‎ ‎ ‎ ‎ </p>
+</section>
+   
+</section>
+
+
+<section id="ventas" class="seccion" style="display: none;">
+    <h2>Productos a la Venta</h2>
+    <div id="categorias">
+        <label for="categoria">Seleccione una categoría:</label>
+        <select  id="categoria" onchange="filtrarProductos()">
+            <option value="todos">Todos</option>
+            <option value="remeras">Remeras</option>
+            <option value="buzos">Buzos</option>
+            <option value="gorras">Gorras</option>
+            <option value="tazas">Tazas</option>
+        </select>
+    </div>
+    <div id="productos" class="productos">
+        <!-- Contenido de productos se agregará dinámicamente aquí -->
+    </div>
+</section>
+    </div>
+    <div id="productos" class="productos">
+        <!-- Contenido de productos se agregará dinámicamente aquí -->
+    </div>
+</section>
+
+<section id="about" class="seccion" style="display: none;">
+    <h2>Acerca de Nosotros</h2>
+    <p>Somos una tienda especializada en productos sublimados...</p>
+    <p>Nuestra historia comenzó en [año de fundación], cuando [breve historia sobre el inicio del negocio]. Desde entonces, hemos estado comprometidos con la entrega de productos de calidad y diseño creativo.</p>
+    <p>En Anacleta, valoramos la creatividad, la innovación y la satisfacción del cliente.</p>
+    <p>Comprometidos con la calidad, cada producto que ofrecemos pasa por un proceso de selección meticuloso y está respaldado por nuestro equipo apasionado.</p>
+    <p>Además de proporcionar productos excepcionales, nos enorgullece [incluir cualquier compromiso social o medioambiental].</p>
+    <p>Gracias por ser parte de nuestra historia. Esperamos que disfrutes explorando nuestra colección única.</p>
+    <!-- Puedes agregar más contenido según sea necesario -->
+</section>
+
+
+
+<footer>
+    <p>&copy; 2023 Anacleta. Todos los derechos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
